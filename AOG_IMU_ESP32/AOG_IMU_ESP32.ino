@@ -107,7 +107,7 @@ const byte FromAOGSentenceHeader[3] = { 0x80,0x81,0x7F };
 #define FromIMUHeader 0x7D
 #define IMUDataToAOGHeader  0xD3
 #define steerDataFromAOGHeader  0xFE 
-#define IMUDataSentenceToAOGLength  10
+#define IMUDataSentenceToAOGLength  14
 
 //global, as serial/USB may not come at once, so values must stay for next loop
 byte incomSentenceDigit = 0,DataToAOGLength;
@@ -119,7 +119,7 @@ unsigned int incommingDataLength[incommingDataArraySize] = { 0,0,0,0,0 };
 #define SentenceFromAOGMaxLength 14
 byte SentenceFromAOG[SentenceFromAOGMaxLength], SentenceFromAOGLength;
 
-byte IMUToAOG[10] = { 0,0,0,0,0,0,0,0,0,0};
+byte IMUToAOG[14] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 
 //libraries ---------------------------------------------------------------------------------------
